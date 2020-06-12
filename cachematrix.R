@@ -57,8 +57,8 @@ cacheSolve <- function(x, ...) {
     
     ## 2. Verified if the inverse has already been calculated
     if (!is.null(invM)){
-        ## check if the return invMatrix not change
-        if ( identical( invM, x$get() ) ){
+        ## check if the return invMatrix is identical
+        if ( identical( x$get() %*% invM, invM %*% x$get() ) ){
             ## get it from the cache and skips the computation. 
             print("getting cached data")
             return(invM)
