@@ -1,5 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
 
 ## Functions:
 ## - makeCacheMatrix - A function to create a special "matrix" object and 
@@ -27,7 +25,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 ## This function will do these:
 ## > Check if the inverse object exist and the matrix is not changed by getting
 ##    the stored inverse matrix calling from the function makeCacheMatrix
