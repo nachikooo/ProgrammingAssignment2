@@ -11,9 +11,8 @@
 ## Write a short comment describing this function
 
 #Short Comment
-## A function that received a special "matrix" object and cache the inverse
-## of the matrix and store in the global environment
-## It does nothing except set and get the matrix and its inverse
+## A function that received a special "matrix" object and cache the inverse of the matrix and store in the global environment
+## It only set and get the matrix and its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
  inv <- NULL
@@ -29,12 +28,12 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-## A function that will
-## > Check if the inverse object exist and the matrix is unchanged by getting
-##    the stored inverse matrix calling from makeCacheMatrix
-## > Return the inverse object in cache if it satisfy the first rules.
-## > Else, compute the inverse of the special 'matrix', store in 
-##    makeCacheMatrix for future use and return the new inverse object.
+## This function will do these:
+## > Check if the inverse object exist and the matrix is not changed by getting
+##    the stored inverse matrix calling from the function makeCacheMatrix
+## > Returns the inverse object in cache if it satisfy the first rules.
+## > Else, compute the inverse of the special "matrix" and store in 
+##    makeCacheMatrix for future use and return the new inverse of "x"
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
